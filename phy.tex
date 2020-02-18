@@ -1,0 +1,81 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[L]{Gaël Mariot}
+\fancyhead[C]{Physique}
+\fancyhead[R]{Tech 2}
+\fancyfoot[L]{\LaTeX}
+\fancyfoot[R]{\thepage}
+
+\title{Physique \\ Tech 2}
+\author{Gaël MRT}
+\date{\today}
+
+
+\newcommand{\ms}{\frac{m}{s}}
+\newcommand{\kmh}{\frac{km}{h}}
+\newcommand{\kgms}{kg*\frac{m}{s}}
+\newcommand{\kgmv}{\frac{kg}{m^3}}
+\newcommand{\cm}{\frac{J}{kg*K}}
+\newcommand{\cs}{\frac{J}{K}}
+\newcommand{\celsius}{^{\circ}C}
+\newcommand{\lf}{\frac{J}{kg}}
+\newcommand{\mv}{\frac{kg}{m^3}}
+\newcommand{\lbda}{\frac{J}{m*K*s}}
+\newcommand{\rtot}{\frac{m^2*K*s}{J}}
+\newcommand{\dt}{{\Delta}t}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+\thispagestyle{fancy}
+
+\chapter{Balistique}
+\thispagestyle{fancy}
+\section{Théorie}
+\input{theorie1.tex}
+\section{Exercices}
+
+\input{exercices1.tex}
+
+
+\newpage
+\chapter{Quantité de mouvement}
+\thispagestyle{fancy}
+\section{Théorie}
+
+\input{theorie2.tex}
+
+\section{Exercices}
+
+\input{exercices2.tex}
+
+\chapter{Chaleur et energie thermique}
+\section{Théorie}
+
+\input{theorie3.tex}
+
+\section{Exercices}
+
+
+\input{exercices3.tex}
+
+\chapter{Transfert de chaleur}
+\section{Théorie}
+
+\input{theorie4.tex}
+
+\section{Exercices}
+
+
+\input{exercices4.tex}
+
+\end{document}

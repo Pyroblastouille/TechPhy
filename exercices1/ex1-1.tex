@@ -1,0 +1,29 @@
+\subsection{Exercice 1}
+\subsubsection{Enoncé}
+Du haut d'un plongeoir de 10m, vous vous élancez avec une vitesse de 3.6 km/h et un angle de 20$^{\circ}$ vers le haut par rapport à l'horizontal.
+\\
+\textit{A quel endroit allez-vous toucher l'eau ?}
+
+\subsubsection{Réponse}
+\textbf{Les équations du problème}
+\begin{itemize}
+    \item $_{Vi}^\rightarrow = (3.6[\frac{km}{h}];20^\circ) = (1[\frac{m}{s}];20^\circ)$
+    \item $xi = 0$
+    \item $yi = 10[m]$
+    \item $Vxi = \cos(20) * 1 = 0.9397[\frac{m}{s}]$
+    \item $Vyi = \sin(20) * 1 = 0.3420[\frac{m}{s}]$
+    \item $yf = 0$
+    \item $xf = Vx * t + xi = 0.9397 * t$
+\end{itemize}
+Pour trouver le temps
+\begin{itemize}
+    \item $yf = \frac{1}{2}*g*t^2+Vyi*t+yi \Rightarrow 0 = \frac{-9.81}{2}*t^2+0.342*t+10$
+    \item $t = \frac{-b \pm \sqrt{b^2-4*a*c}}{2*a} \Rightarrow t = \frac{-0.342 \pm \sqrt{0.342^2-4*-4.905*10}}{2*-4.905}$
+    \item $t = \frac{-0.342 \pm 14.011}{-9.81} = -1.393[s] or 1,463[s]$
+    \item $t > 0$ car on ne peut pas remonter dans le temps $t = 1.463[s]$
+\end{itemize}
+Pour trouver le x final
+\begin{itemize}
+    \item $xf = 0.9397 * 1.463 = 1.375[m]$
+\end{itemize}
+\textit{On va toucher l'eau au point $(1.375[m],0)$}

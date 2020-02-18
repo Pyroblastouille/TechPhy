@@ -1,0 +1,68 @@
+\subsection{Exercice 1-1}
+\subsubsection{Enoncé}
+Une vitre dont la surface est de $2m^2$ et de $3mm$ d'épaisseur, on l'augmente à $1cm$ puis on prend les vitres de $3mm$ et on en met une de chaque coté en gardant une epaisseur totale de $1cm$.
+\textit{Calculer le transfert par minute pour une vitre de 3mm, une vitre de 1cm et une vitre de 1cm composé de deux verres de 3mm séparé par de l'air.}
+\subsubsection{Valeurs}
+\begin{itemize}
+    \item $T1$ = $20\celsius$
+    \item $T2$ = $-5\celsius$
+    \item $\dt = 60[s]$
+    \item $eVerre1 = 0.003[m]$
+    \item $eVerre2 = 0.01[m]$
+    \item $eAir = 0.004[m]$
+    \item ${\lambda}Verre = 0.72 [\lbda]$
+    \item ${\lambda}Air = 0.025 [\lbda]$
+    \item $\dt = 60[s]$
+\end{itemize}
+\subsubsection{Reponse}
+\begin{itemize}
+    \item[Vitre de 3mm]
+    \item $Rtot1 = \frac{eVerre1}{{\lambda}Verre} = \frac{0.003}{0.72} =  \frac{1}{240}[\rtot]$
+    \item $Q1 = \frac{1}{Rtot1} * S * \dt * (T1 - T2) = 240 * 2 * 60 * (20--5) = $\underline{$720000[J]$}
+    \item[Vitre de 1cm]
+    \item $Rtot2 = \frac{eVerre2}{{\lambda}Verre} = \frac{0.01}{0.72} = \frac{1}{72}[\rtot]$
+    \item $Q2 = \frac{1}{Rtot2} * S * \dt * (T1-T2) = 72 * 2 * 60 * (20--5) = $\underline{$216000[J]$}
+    \item[Vitre de 1cm avec 2 vitres de 3mm à chaque bout]
+    \item $Rtot3 = Rtot1*2+\frac{eAir}{{\lambda}Air} = \frac{2}{240} + \frac{0.004}{0.025} = \frac{2}{240} + \frac{4}{25} = \frac{101}{600}[\rtot]$
+    \item $Q3 = \frac{1}{Rtot3} * S * \dt * (T1-T2) = \frac{600}{101} * 2 * 60 * (20--5) = $\underline{$17821.78218[J]$} 
+\end{itemize}
+
+
+\subsection{Exercice 1-2}
+\subsubsection{Enoncé}
+La pièce pert $17821[J]$ avec une température de $20\celsius$ au départ. Quel est sa temperature sachant que la pièce fait $10m$ par $10m$ sur une hauteur de $3m$ et que la masse volumique de l'air est de $1.225[\mv]$. La chaleur massique de l'air est de $1000[\cm]$.
+\textit{Quel est la temperature finale de la pièce ?}
+\subsubsection{Valeurs}
+\begin{itemize}
+    \item[Air] (1)
+    \item[] 
+    \begin{itemize}
+        \item[$Cm$] = $1000[\cm]$
+        \item[$Ti$] = $20\celsius$
+        \item[$V$] = $10*10*3 = 300m^3$
+        \item[$\rho$] = $1.225[\mv]$   
+        \item[$m$] = $V * \rho = 300*1.225 = 367.5[kg]$ 
+    \end{itemize}
+\end{itemize}
+\subsubsection{Reponse}
+\begin{itemize}
+    \item[Calcul de Q] : $Q = Cm * m * (Tf-Ti)$
+    \item $-17821 = 1000 * 367.5 * (Tf - 20)$
+    \item $\frac{-17821}{367500} = -0.048492517 = (Tf-20)$
+    \item $Tf = 19.95150748\celsius$
+    \item[Avec simple vitrage]
+    \item $-720000 = 1000 * 367.5 * (Tf - 20)$
+    \item $\frac{-720000}{367500} = -1.959183673 = (Tf-20)$
+    \item $Tf = 18.04081633\celsius$
+\end{itemize}
+\begin{tabular}{|c|c|c|}
+    \hline
+    Ecoulé & Double vitrage & Simple vitrage \\
+    \hline
+    0 minute & $20\celsius$ & $20\celsius$ \\
+    \hline
+    1 minute & $19.95\celsius$ & $18.04\celsius$ \\
+    \hline
+    2 minutes & $19.90\celsius$ & 16.23$\celsius$ \\
+    \hline
+\end{tabular}

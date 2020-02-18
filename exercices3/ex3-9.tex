@@ -1,0 +1,60 @@
+
+\subsection{Exercice 9}
+\subsubsection{Enoncé}
+
+On rajoute de la glace à $-18\celsius$ dans un bassin dont la chaleur spécifique est de $80[\cs]$ et la température à $5\celsius$ qui est déjà rempli de $1l$ d'eau à $5\celsius$
+
+Quel quantité de glace faut-il mettre pour :
+\begin{itemize}
+    \item[\textit{Faire fondre la glace entièrement et atteindre $0\celsius$}]
+    \item[\textit{Geler totalement l'eau du bassin}]
+\end{itemize}
+\subsubsection{Valeurs}
+\begin{itemize}
+    \item[eauVerre] (1)
+    \item[] 
+    \begin{itemize}
+        \item[$Ti$] = $15\celsius$
+        \item[$V$] = $1[dl] = 0.001[m^3]$
+        \item[$Cm$] = $4180[\cm]$
+        \item[$mv$] = $998[\mv]$ 
+        \item[$m$] = $0.998[kg]$ 
+    \end{itemize}
+    \item[eau] (2)
+    \item[] 
+    \begin{itemize}
+        \item[$m$] = $10[g]$
+        \item[$Ti$] = $0\celsius$
+        \item[$Cm$] = $4180[\cm]$
+    \end{itemize}
+    \item[transformation du glaçon] (3)
+    \item[] 
+    \begin{itemize}
+        \item[$m$] = $10[g]$
+        \item[$Ti$] = $0\celsius$
+        \item[$Cm$] = $2060[\cm]$
+    \end{itemize}
+    \item[$Lf$] = $3.3*10^5[\lf]$
+\end{itemize}
+\subsubsection{Reponse}
+\begin{itemize}
+    \item[Calcul des Q] : $Q = Cm * m * (Tf - Ti)$ ou $Q = Cs * (Tf-Ti)$ 
+    \item $Q1 = 4180 * 1 * (0-5) = -20900[J]$
+    \item $Q2 = 80 * (0-5) = -400[J]$
+    \item $Q3 = 2060 * x - (0-(-18)) = 37080x$
+    
+    \item[Transformation de Q] : $Q = Lf * m$
+    \item $Q3t = 3.3*10^5 * x = 330000x$
+    \item $Q1t = -3.3*10^5 * 1 = -330000[J]$
+    
+    \item[Descendre la température] $Q1+Q2+Q3+Q3t = 0$ car conservation des Q
+    \item $-20900 + -400 + 37080x + 330000x = 0$
+    \item $x = \frac{21300}{367080} = 0.058025499 [kg]$
+    \item[\textit{Il faudra mettre 58 grammes de glace}]
+    
+    \item[Geler la bassine] $Q1+Q2+Q3+Q1t = 0$ car conservation des Q
+    \item $-20900 + -400 + 37080x - 330000 = 0$
+    \item $x = \frac{351300}{37080} = 9.47411 [kg]$
+    \item[\textit{Il faudra mettre 9.474 kilos de glace}]  
+
+\end{itemize}

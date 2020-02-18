@@ -1,0 +1,36 @@
+\subsection{Exercice 2}
+\subsubsection{Enoncé}
+Lors d'un service, Federer frappe la balle à une hauteur de 260cm et avec un angle de 9$^{\circ}$ vers le bas par rapport à l'horizontal. Il se trouve à 10 mètres du filet qui a une hauteur de 90 centimètres.
+\\
+\textit{Trouvez la vitesse de départ de la balle en km/h, si elle frôle le haut du filet et donner ensuite la réponse sous forme vectorielle polaire.}
+
+\subsubsection{Réponse}
+\textbf{Les équations du problème}
+\begin{itemize}
+    \item $_{Vi}^\rightarrow = (?[km/h];351^\circ)$
+    \item $xi = 0$
+    \item $yi = 2.6 [m]$
+    \item $xf = 10 [m]$
+    \item $yf = 0.9 [m]$
+    \item $Vxi = Vi * \cos(351)$
+    \item $Vyi = Vi * \sin(351)$
+    \item $t = ?$
+\end{itemize}
+\begin{itemize}
+    \item[Trouvons le temps]
+    \item $yf=\frac{1}{2}*g*t^2+Vyi * t + yi \Rightarrow 0.9 = \frac{-9.81}{2}*t^2 + Vyi * t + 2.6$
+    \item $Vyi = Vi * \sin(351)$ donc $0.9 = \frac{-9.81}{2}*t^2 + Vi * \sin(351) * t + 2.6$
+    \item $xf = Vxi * t + xi  \Rightarrow 10 = Vxi * t$
+    \item $Vxi = Vi * \cos(351)$ donc $Vi = \frac{10}{\cos(351)*t}$
+    \item $0.9 = \frac{-9.81}{2}*t^2 + \frac{10}{\cos(351) * \underline{t}} * \sin(351) * \underline{t} + 2.6$
+    \item[On simplifie les t]
+    \item $0.9 = \frac{-9.81}{2}*t^2 + \frac{10}{\cos(351)} * \sin(351) + 2.6$
+    \item $\frac{-9.81}{2}*t^2 = -0.1162$
+    \item $t^2 = 0.0237$
+    \item $t = 0.1538[s] ou -0.1538[s]$ mais négatif impossible
+    \item[Trouvons $_{Vi}^\rightarrow$]
+    \item $Vi = \frac{10}{\cos(351)*0.1538} = 65.787 [\frac{m}{s}] \Rightarrow 236.833 [\frac{km}{h}]$
+    \item $_{Vi}^\rightarrow = (236.833[\frac{km}{h}];351^\circ)$
+\end{itemize}
+Voici donc le resultat : $_{Vi}^\rightarrow = (236.833[\frac{km}{h}];351^\circ)$
+
