@@ -8,16 +8,25 @@ Sans espace, les rails vont "flamber" c'est à dire faire une courbure et ça ri
 Si on prend un rail et qu'on augmente la température, la longueur augmente de chaque côté de $\frac{{\Delta}l}{2}$. Si un coté est bloqué, l'autre coté augmente de  ${\Delta}l$.
 
 \begin{itemize}
-    \item[${\Delta}l = \alpha * l1 * (T2 - T1)$]
-    \item ${\Delta}l = [m]$
-    \item $\alpha = \frac{1}{K}$ le Coefficient de dilatation linéaire
+    \item[$\dl = \alpha * l1 * (T2 - T1)$]
+    \item $\dl = [m]$
+    \item $\alpha [\dila]= $ le Coefficient de dilatation linéaire
     \item $l1 = [m]$
     \item $(T2 - T1) = K ou \celsius$
-    \item[$l2 = l1 + {\Delta}l$]
+    \item[$l2 = l1 + \dl$]
     \item[$l2 = l1 + \alpha * l1 * (T2 - T1)$]
     \item[$l2 = l1 (1+\alpha*(T2-T1)$]
 \end{itemize}
 
+En 3D il faut faire la même chose dans chaque direction
 
 \subsection{Liquides}
+Il faut prendre en compte le récipient qui est solide.Dans les liquides ça dilate beaucoup plus. On va faire directement de la dilatation volumique
+
+\begin{itemize}
+    \item $V2 = V1 + \dV$
+    \item $\dV = \gamma * V1 * \dT$
+    \item $\gamma [\dila] =$ = Coefficient de dilatation volumique
+\end{itemize}
+
 \subsection{Gazeux}
